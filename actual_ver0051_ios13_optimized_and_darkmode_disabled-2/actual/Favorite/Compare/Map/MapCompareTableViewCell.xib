@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="313" id="I4l-rg-V5e" customClass="MapCompareTableViewCell" customModule="actual" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="313"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I4l-rg-V5e" id="7WU-F1-tVb">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="312.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="poS-F3-yZC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="320" id="Mz8-jo-Clz"/>
+                            <constraint firstAttribute="height" constant="250" id="uxq-kQ-nTj"/>
+                        </constraints>
+                    </mapView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqh-i1-eTl">
+                        <rect key="frame" x="35" y="272" width="75" height="51"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="AWq-hK-z0w"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIy-Qx-wYQ">
+                        <rect key="frame" x="210" y="272" width="75" height="51"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="tIS-e0-46M"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_Car" translatesAutoresizingMaskIntoConstraints="NO" id="ytT-RB-Hf9">
+                        <rect key="frame" x="118" y="258" width="84" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ytT-RB-Hf9" secondAttribute="height" multiplier="84:23" id="3R0-Ks-bno"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Oqh-i1-eTl" secondAttribute="bottom" constant="-21" id="PZV-Cv-r37"/>
+                    <constraint firstAttribute="trailing" secondItem="poS-F3-yZC" secondAttribute="trailing" id="RyA-ek-tPK"/>
+                    <constraint firstItem="Oqh-i1-eTl" firstAttribute="baseline" secondItem="hIy-Qx-wYQ" secondAttribute="baseline" id="Tdz-oQ-e99"/>
+                    <constraint firstItem="ytT-RB-Hf9" firstAttribute="leading" secondItem="7WU-F1-tVb" secondAttribute="leading" constant="118" id="W4w-re-eRC"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hIy-Qx-wYQ" secondAttribute="trailing" constant="19" id="bW5-es-HtZ"/>
+                    <constraint firstItem="poS-F3-yZC" firstAttribute="leading" secondItem="7WU-F1-tVb" secondAttribute="leading" id="cfa-ux-Om0"/>
+                    <constraint firstItem="Oqh-i1-eTl" firstAttribute="leading" secondItem="7WU-F1-tVb" secondAttribute="leadingMargin" constant="19" id="e27-52-FAF"/>
+                    <constraint firstItem="Oqh-i1-eTl" firstAttribute="firstBaseline" secondItem="hIy-Qx-wYQ" secondAttribute="firstBaseline" id="jGy-wm-AJa"/>
+                    <constraint firstAttribute="trailing" secondItem="ytT-RB-Hf9" secondAttribute="trailing" constant="118" id="jKg-bN-F04"/>
+                    <constraint firstItem="Oqh-i1-eTl" firstAttribute="top" secondItem="poS-F3-yZC" secondAttribute="bottom" constant="22" id="jhT-fY-a1a"/>
+                    <constraint firstItem="poS-F3-yZC" firstAttribute="top" secondItem="7WU-F1-tVb" secondAttribute="top" id="noj-zI-dAm"/>
+                    <constraint firstAttribute="bottom" secondItem="ytT-RB-Hf9" secondAttribute="bottom" constant="31.5" id="olw-yX-Boe"/>
+                    <constraint firstItem="ytT-RB-Hf9" firstAttribute="top" secondItem="poS-F3-yZC" secondAttribute="bottom" constant="8" id="yyf-Lx-wPd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="x36-Yk-XiE"/>
+            <connections>
+                <outlet property="carImage" destination="ytT-RB-Hf9" id="Yf6-rK-fsZ"/>
+                <outlet property="mapView" destination="poS-F3-yZC" id="nfX-dt-Dhv"/>
+                <outlet property="p1Label" destination="Oqh-i1-eTl" id="bTZ-OX-vNN"/>
+                <outlet property="p2Label" destination="hIy-Qx-wYQ" id="bJE-HG-xDw"/>
+            </connections>
+            <point key="canvasLocation" x="121.73913043478262" y="15.736607142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_Car" width="54.5" height="19"/>
+    </resources>
+</document>

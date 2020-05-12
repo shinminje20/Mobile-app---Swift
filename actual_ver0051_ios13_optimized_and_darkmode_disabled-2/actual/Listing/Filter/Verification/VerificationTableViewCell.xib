@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="verificationcell" rowHeight="58" id="KGk-i7-Jjw" customClass="VerificationTableViewCell" customModule="actual" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nUN-kQ-K3Q">
+                        <rect key="frame" x="277" y="27.5" width="51" height="24.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="nUN-kQ-K3Q" secondAttribute="height" multiplier="2:1" id="a27-lp-xEH"/>
+                            <constraint firstAttribute="width" constant="49" id="iah-bK-fzT"/>
+                        </constraints>
+                    </switch>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fSO-QK-PPe">
+                        <rect key="frame" x="40" y="23" width="90" height="33.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fSO-QK-PPe" secondAttribute="height" multiplier="91:34" id="Gy5-ca-SAF"/>
+                            <constraint firstAttribute="width" constant="90" id="tLD-Wc-cml"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="nUN-kQ-K3Q" secondAttribute="trailing" constant="21" id="6e8-i7-gwg"/>
+                    <constraint firstItem="fSO-QK-PPe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Yo7-G3-l9Q"/>
+                    <constraint firstItem="fSO-QK-PPe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="ctn-Rf-Qbt"/>
+                    <constraint firstItem="nUN-kQ-K3Q" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jE1-AQ-Vof"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="verificationImage" destination="fSO-QK-PPe" id="AoZ-hY-tZo"/>
+                <outlet property="verificationSwitch" destination="nUN-kQ-K3Q" id="KK3-SF-DG7"/>
+            </connections>
+            <point key="canvasLocation" x="47.10144927536232" y="39.508928571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

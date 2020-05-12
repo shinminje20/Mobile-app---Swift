@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BathUploadTableViewCell" customModule="actual" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJZ-Eh-qUb">
+                        <rect key="frame" x="60" y="2" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="U9e-Z1-ufn"/>
+                            <constraint firstAttribute="width" constant="40" id="mtM-4p-BLC"/>
+                        </constraints>
+                        <state key="normal" title="-"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Studio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80D-JG-qtz">
+                        <rect key="frame" x="129" y="2" width="62" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="62" id="DDX-Db-Teh"/>
+                            <constraint firstAttribute="height" constant="40" id="v0D-0D-y1g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mY6-4V-vUG">
+                        <rect key="frame" x="219" y="2" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="BTb-wn-5CO"/>
+                            <constraint firstAttribute="height" constant="40" id="Dog-Xt-8fY"/>
+                        </constraints>
+                        <state key="normal" title="+"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UJZ-Eh-qUb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="1L6-h8-VS0"/>
+                    <constraint firstAttribute="bottom" secondItem="UJZ-Eh-qUb" secondAttribute="bottom" constant="1.5" id="3qb-aa-SH8"/>
+                    <constraint firstAttribute="bottom" secondItem="80D-JG-qtz" secondAttribute="bottom" constant="1.5" id="LKQ-ys-Spr"/>
+                    <constraint firstAttribute="bottom" secondItem="mY6-4V-vUG" secondAttribute="bottom" constant="1.5" id="VTQ-wE-Qjn"/>
+                    <constraint firstItem="80D-JG-qtz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="XcO-5b-tEn"/>
+                    <constraint firstItem="mY6-4V-vUG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="YQV-QK-Mvb"/>
+                    <constraint firstItem="80D-JG-qtz" firstAttribute="leading" secondItem="UJZ-Eh-qUb" secondAttribute="trailing" constant="29" id="aJr-3J-pXq"/>
+                    <constraint firstItem="mY6-4V-vUG" firstAttribute="leading" secondItem="80D-JG-qtz" secondAttribute="trailing" constant="28" id="k2x-zv-H7K"/>
+                    <constraint firstItem="UJZ-Eh-qUb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="mCa-Tm-Xgp"/>
+                    <constraint firstAttribute="trailing" secondItem="mY6-4V-vUG" secondAttribute="trailing" constant="61" id="mvO-bT-o2h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="infoLabel" destination="80D-JG-qtz" id="8C6-DC-sIv"/>
+                <outlet property="minusButton" destination="UJZ-Eh-qUb" id="g3x-tR-tzM"/>
+                <outlet property="plusButton" destination="mY6-4V-vUG" id="2zu-rV-eKV"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="44"/>
+        </tableViewCell>
+    </objects>
+</document>

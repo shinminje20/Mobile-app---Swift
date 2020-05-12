@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>756298181126-onot60r73fh60vijoa35uoh8pas9dkls.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.756298181126-onot60r73fh60vijoa35uoh8pas9dkls</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCz5_mCRzCv9zHLVESzQhNO-lKmFKSzJnk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>756298181126</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kcplatform.roomx</string>
+	<key>PROJECT_ID</key>
+	<string>roomx-5f041</string>
+	<key>STORAGE_BUCKET</key>
+	<string>roomx-5f041.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:756298181126:ios:efc4d67f1d890666</string>
+	<key>DATABASE_URL</key>
+	<string>https://roomx-5f041.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-2442041822235321~8703973684</string>
+</dict>
+</plist>
